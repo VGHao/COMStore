@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*
+
+body
+{
+    background: #D8E1D3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+form
+{
+    width: 500px;
+    border: 2px solid #ccc;
+    padding: 30px;
+    background: #fff;
+    border-radius: 15px;
+}
+h2
+{
+    text-align: center;
+    margin-bottom: 20px;
+}
+input
+{
+    display: block;
+    border: 2px solid #ccc;
+    width: 95%;
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+button
+{
+    display: block;
+    border: 2px solid #166FE5;
+    background: #166FE5;
+    color: #fff;
+    width: 95%;
+    padding: 6px;
+    margin: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+button:hover
+{
+    letter-spacing: 4px;
+}
+
+.ca {
+	font-size: 14px;
+	display: inline-block;
+	padding: 10px;
+	text-decoration: none;
+    color: #166FE5;
+}
+.ca:hover
+{
+	text-decoration: underline;
+} 
+
+/******************Navbar**************/
+
+
+.logo{
+    float: left;
+}
+nav{
+	width: 100%;
+  min-height: 60px;
+  background-color: #ffffff;
+  display: block;
+  box-shadow: 0px 2px 2px rgba(0,0,0,0.5); /*Đổ bóng cho menu*/
+  position: fixed; /*Cho menu cố định 1 vị trí với top và left*/
+  top: 0; /*Nằm trên cùng*/
+  left: 0; /*Nằm sát bên trái*/
+  z-index: 100000; /*Hiển thị lớp trên cùng*/
+  align-items: center;
+}
+ul {
+	list-style-type: none;
+	margin: 0px;
+	padding-top: 0px;
+	overflow: hidden;
+    color: #000000;
+}
+li {
+	list-style-type: none;
+	line-height: 45px;
+
+    float: right; 
+    margin-right: 30px;
+    }
+
+li a {
+	white-space: nowrap;
+	color: rgb(0, 0, 0);
+	font-size: 20px;
+	display: block;
+	padding: 14px 16px;
+	text-decoration: none;
+	text-align: center;
+}
+
+li a svg{
+	white-space: nowrap;
+	display: block;
+	padding: 8px 0px;
+	text-decoration: none;
+	text-align: center;
+}
+/*subNavBar*/
+nav ul li ul{
+	position: absolute;
+	width: auto;
+	display: none;
+	background-color: #ffffff;
+	box-shadow: 0px 1px 3px rgba(0,0,0,0.5);
+	padding-left: 5px;
+	border-radius: 15%;
+}
+
+nav ul li ul li{
+	display: block;
+	padding: 0;
+	margin: 0;
+	float: none;
+}
+/*display submenu*/
+nav ul li:hover  ul{
+	display: block;
+	
+}
+
+/*display hover*/
+
+ul li a:hover {
+	color: #95a5a6;
+  }
